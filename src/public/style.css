@@ -1,0 +1,22 @@
+body {
+    background-color: bisque;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+h1 {
+    font-size: 3rem;
+}
+main{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    border: 2px dashed red;
+    background-color: white;
+}
+nav{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}

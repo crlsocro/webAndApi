@@ -1,0 +1,47 @@
+{
+  "name": "WebApi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christian Richard Lie",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-jest": "^26.6.3",
+    "concurrently": "^6.0.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "parcel": "^1.12.3",
+    "prettier": "^2.2.1",
+    "react-test-renderer": "^17.0.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run parcel\"",
+    "server": "nodemon --watch src/server src/server/server.js",
+    "parcel": "parcel watch src/public/index.html",
+    "test": "jest",
+    "format": "prettier --write src"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "jest": {
+    "transform": {
+      "\\.jsx": "babel-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}
