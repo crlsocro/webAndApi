@@ -1,7 +1,7 @@
 
 _________________________
 An easy Web and Api Application
-From the lectures in web and api design with log in implementation
+From the lectures in web and api design 
 _________________________
 
 TO RUN THE APPLICATION:
